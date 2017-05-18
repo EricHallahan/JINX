@@ -1,5 +1,6 @@
 #include "main.h"
 #include "JINX.h"
+#include "JINXAutoGen.h"
 
 #define MSG "Hello JINX!"
 
@@ -74,6 +75,6 @@ void parseMessage(JINX *inStr) {
 
     } else {
         //Do default
-        writeJINXMessage("No comparison found");
+        autoJINXparse(inStr);
     }
 }
